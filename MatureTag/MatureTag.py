@@ -23,3 +23,5 @@ def matureCheck(self, card, ease):
     return True
 
 Scheduler.answerCard = wrap(Scheduler.answerCard, matureCheck)
+from anki.schedv2 import Scheduler as SchedulerV2
+SchedulerV2.answerCard = wrap(SchedulerV2.answerCard, matureCheck)
